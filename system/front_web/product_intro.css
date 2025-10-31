@@ -1,0 +1,48 @@
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.category-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 商品卡片之間有間距 */
+  padding: 10px 0;
+}
+
+.category-block.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  width: calc(33.33% - 20px); /* 3欄排版 */
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
